@@ -1,13 +1,25 @@
-.site-list__item {
+.main-nav__item {
+  text-align: center;
+  width: 320px;
+  height: 66px;
   color: @basic__black;
   font-family: "Oswald", "Arial", sans-serif;
-  font-style: bold;
+  font-style: normal;
+  font-weight: 500;
   font-size: 20px;
   line-height: 20px;
+  border-bottom: 1px solid @basic__grey-2;
 }
 
-.site-list {
+.main-nav__list {
   list-style: none;
   margin: 0;
   padding: 0;
+}
+
+@media (min-width: @tablet-width) {
+  .main-nav__item {
+    font-size: 18px;
+    line-height: 24px;
+  }
 }

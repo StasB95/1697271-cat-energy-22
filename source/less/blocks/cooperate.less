@@ -1,0 +1,39 @@
+.cooperate {
+  width: 320px;
+  height: 114px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.cooperate__title {
+  font-size: 16px;
+  line-height: 18px;
+}
+
+.cooperate__text {
+  font-family: "Arial", "Helvetica", sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  color: @special__dark-grey;
+}
+
+@media (min-width: @tablet-width) {
+  .cooperate {
+    width: 767px;
+    height: 201px;
+  }
+
+  .cooperate__title {
+    font-size: 20px;
+    line-height: 21px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .cooperate {
+    width: 570px;
+    height: 201px;
+    display: flex;
+    justify-content: space-around;
+  }
+}
