@@ -1,49 +1,52 @@
-.presentation {
-  margin-top: -30px;
-  height: 480px;
-  color: @basic__white;
-}
 
-.presentation__desc {
-  background-color: @basic_green;
-  width: 320px;
-  height: 302px;
-}
+@media (min-width: @mobile-width-only) {
+  .presentation {
+    margin-top: -30px;
+    height: 480px;
+    color: @basic__white;
+  }
 
-.presentation_title {
-  margin-bottom: 0;
-  padding-top: 27px;
-  font-size: 36px;
-  line-height: 36px;
-  text-align: center;
-}
+  .presentation__desc {
+    background-color: @basic_green;
+    width: 320px;
+    height: 302px;
+  }
 
-.presentation_text {
-  margin-top: 0;
-  padding-top: 25px;
-  font-size: 14px;
-  line-height: 14px;
-  text-align: center;
-}
+  .presentation_title {
+    margin-bottom: 0;
+    padding-top: 27px;
+    font-size: 36px;
+    line-height: 36px;
+    text-align: center;
+  }
 
-.presentation_img {
-  margin-top: -140px;
-}
+  .presentation_text {
+    margin-top: 0;
+    padding-top: 25px;
+    font-size: 14px;
+    line-height: 14px;
+    text-align: center;
+  }
 
-.presentation_link {
-  width: 280px;
-  height: 40px;
-  font-size: 14px;
-  line-height: 18px;
-  background-color: @basic_green;
-  color: @basic__white;
+  .presentation_img {
+    margin-top: -140px;
+  }
+
+  .presentation_link {
+    width: 280px;
+    height: 40px;
+    font-size: 14px;
+    line-height: 18px;
+    background-color: @basic_green;
+    color: @basic__white;
+  }
 }
 
 @media (min-width: @tablet-width) {
   .presentation {
-    margin-top: -30px;
-    height: 980px;
-    color: @basic__white;
+    margin: 0 auto;
+    width: 768px;
+    height: 872px;
   }
 
   .presentation__desc {
@@ -74,5 +77,29 @@
     line-height: 20px;
     background-color: @basic_green;
     color: @basic__white;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .presentation {
+    margin: 0 auto;
+    width: 1440px;
+    height: 696px;
+    background-color: @basic_green;
+  }
+
+  .presentation__wrapper {
+    display: flex;
+  }
+
+  .presentation_img {
+    width: 552px;
+    height: 499px;
+  }
+
+  .presentation__desc {
+    width: 720px;
+    height: 696px;
+    background-color: @basic__white;
   }
 }
