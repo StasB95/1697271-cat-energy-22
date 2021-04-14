@@ -82,10 +82,10 @@
 
 @media (min-width: @desktop-width) {
   .presentation {
+    position: relative;
     margin: 0 auto;
     width: 1440px;
     height: 696px;
-    background-color: @basic_green;
   }
 
   .presentation__wrapper {
@@ -93,6 +93,10 @@
   }
 
   .presentation_img {
+    position: absolute;
+    z-index: 3;
+    top: 50px;
+    left: 580px;
     width: 552px;
     height: 499px;
   }
@@ -101,5 +105,29 @@
     width: 720px;
     height: 696px;
     background-color: @basic__white;
+  }
+
+  .presentation::before {
+    content: "";
+    position: absolute;
+    z-index: 0;
+    top: 0;
+    left: 720px;
+    width: 1040px;
+    height: 696px;
+    background-image: url("../img/index-background-desktop.png");
+    background-repeat: no-repeat;
+  }
+
+  .presentation::after {
+    content: "";
+    position: absolute;
+    z-index: 0;
+    top: 0;
+    left: 720px;
+    width: 100%;
+    height: 696px;
+    background-color: @basic_green;
+    opacity: 85%;
   }
 }
