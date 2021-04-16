@@ -1,21 +1,83 @@
-.more__button {
-  font-size: 16px;
-  line-height: 20px;
-  width: 280px;
-  height: 40px;
-  color: @special__dark-grey;
-  background-color: @basic__grey;
-  border: none;
+@media (min-width: @mobile-width-only) {
+  .more__button {
+    font-size: 16px;
+    line-height: 20px;
+    width: 280px;
+    height: 40px;
+    color: @special__dark-grey;
+    background-color: @basic__grey;
+    border: none;
+  }
+
+  .more__title {
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .more__text {
+    font-family: "Arial", "Helvetica", sans-serif;
+    font-size: 12px;
+    line-height: 16px;
+    color: @special__dark-grey;
+  }
 }
 
-.more__title {
-  font-size: 16px;
-  line-height: 20px;
+@media (min-width: @tablet-width) {
+  .more {
+    width: 324px;
+    height: 429px;
+    margin-left: 20px;
+  }
+
+  .more__button {
+    font-size: 16px;
+    line-height: 20px;
+    width: 248px;
+    height: 40px;
+    color: @special__dark-grey;
+    background-color: @basic__grey;
+    border: none;
+  }
+
+  .more__title {
+    font-size: 20px;
+    line-height: 22px;
+  }
+
+  .more__text {
+    font-family: "Arial", "Helvetica", sans-serif;
+    font-size: 16px;
+    line-height: 18px;
+    color: @special__dark-grey;
+  }
 }
 
-.more__text {
-  font-family: "Arial", "Helvetica", sans-serif;
-  font-size: 12px;
-  line-height: 16px;
-  color: @special__dark-grey;
+@media (min-width: @desktop-width) {
+  .more {
+    width: 245px;
+    height: 430px;
+    margin-left: 20px;
+  }
+
+  .more__button {
+    font-size: 16px;
+    line-height: 20px;
+    width: 149px;
+    height: 40px;
+    color: @special__dark-grey;
+    background-color: @basic__grey;
+    border: none;
+  }
+
+  .more__title {
+    font-size: 20px;
+    line-height: 22px;
+  }
+
+  .more__text {
+    font-family: "Arial", "Helvetica", sans-serif;
+    font-size: 16px;
+    line-height: 18px;
+    color: @special__dark-grey;
+  }
 }
