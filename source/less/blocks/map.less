@@ -1,26 +1,32 @@
-@media (min-width: @mobile-width-only) {
-  .map {
-    background-color: @basic__grey;
-    height: 400px;
-  }
-}
+.map {
+  background-color: @basic__grey;
+  margin: 0 auto;
+  width: 320px;
+  height: 362px;
 
-
-@media (min-width: @tablet-width) {
-  .map {
-    margin: 0 auto;
+  @media (min-width: @tablet-width) {
+    width: 768px;
     height: 400px;
   }
 
-  .map-iframe {
+  @media (min-width: @desktop-width) {
     width: 100%;
-    background-color: @basic__grey;
     height: 400px;
   }
 }
 
-@media (min-width: @desktop-width) {
-  .map-iframe {
+.map-iframe {
+  width: 320px;
+  height: 362px;
+
+  @media (min-width: @tablet-width) {
+    margin: 0 auto;
+    width: 768px;
+    background-color: @basic__grey;
+    height: 400px;
+  }
+
+  @media (min-width: @desktop-width) {
     background-color: @basic__grey;
     width: 100%;
     height: 400px;

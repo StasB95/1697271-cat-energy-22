@@ -7,32 +7,35 @@
   </head>
   <body class="page__body">
     <header class="page-header">
-      <div class="page-header__logo">
-        <a>
-          <img class="page-header__logo-1" src="img/logo-mobile1.svg" width="33" height="34" alt="Логотип Кот">
-        </a>
-        <a>
-          <img class="page-header__logo-2" src="img/logo-mobile2.svg" width="101" height="18" alt="Логотип CAT ENERGY">
-        </a>
-        <button class="page-header__toggle" type="button">
-          <span class="visually-hidden">Открыть меню</span>
-        </button>
-      </div>
-      <nav class="main-nav">
-        <div class="main-nav__wrapper">
-          <ul class="main-nav__list">
-            <li class="main-nav__item">
-              <a>ГЛАВНАЯ</a>
-            </li>
-            <li class="main-nav__item">
-              <a href="catalog.html">КАТАЛОГ ПРОДУКЦИИ</a>
-            </li>
-            <li class="main-nav__item">
-              <a href="form.html">ПОДБОР ПРОГРАММЫ</a>
-            </li>
-          </ul>
+      <div class="page-header__wrapper">
+        <div class="page-header__logo">
+          <a>
+            <img class="page-header__logo-1" src="img/logo-mobile1.svg" width="33" height="34" alt="Логотип Кот">
+          </a>
+          <a>
+            <img class="page-header__logo-2" src="img/logo-mobile2.svg" width="101" height="18" alt="Логотип CAT ENERGY">
+          </a>
+
         </div>
-      </nav>
+        <nav class="main-nav main-nav--closed  main-nav--nojs">
+          <button class="main-nav__toggle" type="button">
+            <span class="visually-hidden">Открыть меню</span>
+          </button>
+          <div class="main-nav__wrapper">
+            <ul class="main-nav__list">
+              <li class="main-nav__item">
+                <a>ГЛАВНАЯ</a>
+              </li>
+              <li class="main-nav__item">
+                <a href="catalog.html">КАТАЛОГ ПРОДУКЦИИ</a>
+              </li>
+              <li class="main-nav__item">
+                <a href="form.html">ПОДБОР ПРОГРАММЫ</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
     </header>
     <main class="page-main">
       <section class="presentation">
@@ -53,16 +56,24 @@
               <img class="desire__img" src="img/cat-thin.svg" width="50" height="50" alt="Кот худой">
               <h2 class="desire__title">Похудение</h2>
             </div>
-            <p class="desire__text">Ваш кот весит больше собаки и<br> почти утратил способность лазить<br> по деревьям? Пора на диету! Cat<br> Energy Slim поможет вашему<br> питомцу сбросить лишний вес.</p>
+            <p class="desire__text">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
             <a class="desire__link" href="catalog.html">Каталог SLIM</a>
+            <svg width="24" height="12" viewBox="0 0 24 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <line y1="6" x2="18" y2="6" stroke="black" stroke-width="2"/>
+              <path d="M24 6L17.25 11.1962L17.25 0.803848L24 6Z" fill="black"/>
+            </svg>
           </div>
           <div class="desire__content desire__weight-gain">
             <div class="desire__header">
               <img class="desire__img" src="img/cat-powerful.svg" width="67" height="50" alt="Кот сильный">
               <h2 class="desire__title">Набор массы</h2>
             </div>
-            <p class="desire__text">Заработать авторитет среди<br> дворовых котов и даже собак?<br> Серия Cat Energy Pro поможет<br> вашему коту нарастить<br> необходимые мышцы!</p>
+            <p class="desire__text">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
             <a class="desire__link" href="catalog.html">Каталог PRO</a>
+            <svg width="24" height="12" viewBox="0 0 24 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <line y1="6" x2="18" y2="6" stroke="black" stroke-width="2"/>
+              <path d="M24 6L17.25 11.1962L17.25 0.803848L24 6Z" fill="black"/>
+            </svg>
           </div>
         </div>
       </section>
@@ -93,14 +104,16 @@
         <div class="example__wrapper">
           <h2 class="example__title">Живой пример</h2>
           <div class="example__information">
-            <p class="example__text">Борис сбросил 5 кг за 2 месяца, просто<br> заменив свой обычный корм на Cat Energy<br> Slim. Отличный результат без изнуряющих<br> тренировок! При этом он не менял своих<br> привычек и по-прежнему спит по 16 часов<br> в день. </p>
-            <div>
-              <p>5 кг</p>
-              <p>снижение веса</p>
-            </div>
-            <div>
-              <p>60 дней</p>
-              <p>затрачено времени</p>
+            <p class="example__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
+            <div class="example__block">
+              <div>
+                <p class="example__content">5 кг</p>
+                <p class="example__text2">снижение веса</p>
+              </div>
+              <div>
+                <p class="example__content">60 дней</p>
+                <p class="example__text2">затрачено времени</p>
+              </div>
             </div>
             <p class="example__cost">Затраты на питание: 15 000 РУБ.</h3>
           </div>
@@ -121,7 +134,7 @@
           <p  class="cooperate__text">ул. Большая<br> Конюшенная, д. 19/8<br> Санкт-Петербург</p>
         </div>
         <div class="page-footer__map map">
-          <iframe class="map-iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1999.4937287999005!2d30.32103171824072!3d59.92394917554703!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8sIDE5MTE4Ng!5e0!3m2!1sru!2sua!4v1616713801522!5m2!1sru!2sua"  style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+          <iframe class="map-iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1999.4937287999005!2d30.32103171824072!3d59.92394917554703!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8sIDE5MTE4Ng!5e0!3m2!1sru!2sua!4v1616713801522!5m2!1sru!2sua"  style="border: 0;" allowfullscreen="" loading="lazy"></iframe>
         </div>
         <div class="page-footer-tablet">
           <div class="page-footer__logo">
@@ -165,5 +178,21 @@
         </div>
       </div>
     </footer>
+    <script>
+      var navMain = document.querySelector('.main-nav');
+      var navToggle = document.querySelector('.main-nav__toggle');
+
+      navMain.classList.remove('main-nav--nojs');
+
+      navToggle.addEventListener('click', function() {
+        if (navMain.classList.contains('main-nav--closed')) {
+          navMain.classList.remove('main-nav--closed');
+          navMain.classList.add('main-nav--opened');
+        } else {
+          navMain.classList.add('main-nav--closed');
+          navMain.classList.remove('main-nav--opened');
+        }
+      });
+    </script>
   </body>
 </html>

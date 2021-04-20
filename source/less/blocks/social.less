@@ -1,31 +1,32 @@
-@media (min-width: @mobile-width-only) {
-  .social__list {
+.social__list {
+  display: flex;
+  justify-content: space-around;
+  margin: 0;
+  padding-top: 30px;
+  list-style: none;
+
+  @media (min-width: @tablet-width) {
     display: flex;
     justify-content: space-around;
-    margin: 0;
+    margin-top: 63px;
     padding: 0;
     list-style: none;
   }
-
-  .social {
-    width: 320px;
-    height: 63px;
-    margin-top: -16px;
-    background-color: @basic__grey;
-  }
 }
 
+.social {
+  width: 320px;
+  height: 63px;
+  margin-top: -16px;
+  background-color: @basic__grey;
 
-@media (min-width: @tablet-width) {
-  .social {
+  @media (min-width: @tablet-width) {
     width: 256px;
     height: 146px;
     margin: 0;
   }
-}
 
-@media (min-width: @desktop-width) {
-  .social {
+  @media (min-width: @desktop-width) {
     width: 480px;
     height: 149px;
     margin: 0;
