@@ -1,0 +1,132 @@
+.slider {
+  position: relative;
+  height: 400px;
+
+  @media (min-width: @tablet-width) {
+    background-color: @basic__grey;
+    margin-top: 270px;
+    height: 500px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin: 0;
+    width: 610px;
+  }
+}
+
+.slider__bar {
+  font-size: 16px;
+  line-height: 20px;
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  left: 46px;
+  bottom: 0;
+  width: 228px;
+  height: 40px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+    left: 98px;
+    width: 572px;
+    margin-bottom: 40px;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 17px;
+      left: 75px;
+      width: 428px;
+      height: 6px;
+      background-color: @special__grey;
+      border-radius: 6px;
+    }
+
+    .slider__toggle {
+      content: "";
+      position: absolute;
+      z-index: 1;
+      top: 4px;
+      left: 50%;
+      width: 8px;
+      height: 8px;
+      background-color: @basic_green;
+      border-radius: 50%;
+      border: 13px solid @basic__white;
+      box-shadow: 0 2px 1px 0 @special__grey;
+
+      &:active {
+        content: "";
+        position: absolute;
+        z-index: 1;
+        top: 4px;
+        left: 50%;
+        width: 8px;
+        height: 8px;
+        background-color: @basic_green;
+        border-radius: 50%;
+        border: 13px solid @basic__white;
+        box-shadow: 0 0 0 1px @basic_green;
+      }
+    }
+  }
+
+  @media (max-width: @mobile-width-only) {
+    .slider__bar {
+      position: relative;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 16px;
+      left: 78px;
+      width: 35px;
+      height: 6px;
+      background-color: @basic__white;
+      border-radius: 6px;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 12px;
+      left: 72px;
+      width: 84px;
+      height: 14px;
+      background-color: @basic_green;
+      border-radius: 6px;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 65px;
+  }
+}
+
+.slider__after,
+.slider__before {
+  position: absolute;
+  left: 35px;
+  bottom: 55px;
+  width: 250px;
+  height: 240px;
+
+  @media (min-width: @tablet-width) {
+    width: 708px;
+    height: 560px;
+    bottom: 100px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 600px;
+    height: 530px;
+    bottom: 130px;
+  }
+}
+
+.slider__after {
+  display: none;
+}

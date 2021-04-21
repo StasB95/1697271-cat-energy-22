@@ -3,10 +3,11 @@
   width: 280px;
 
   @media (min-width: @tablet-width) {
-    width: 768px;
+    width: 708px;
   }
 
   @media (min-width: @desktop-width) {
+    margin: 0 auto;
     width: 1220px;
   }
 }
@@ -98,11 +99,19 @@
   margin-left: 20px;
   margin-right: 20px;
 
+  &:active {
+    opacity: 0.3;
+  }
+
   @media (min-width: @tablet-width) {
     margin-left: 52px;
     font-size: 20px;
     line-height: 30px;
   }
+}
+
+.desire__arrow {
+  margin-left: 20px;
 }
 
 @media (min-width: @desktop-width) {

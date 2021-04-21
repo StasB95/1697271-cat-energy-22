@@ -1,13 +1,16 @@
 .social__list {
   display: flex;
   justify-content: space-around;
-  margin: 0;
-  padding-top: 30px;
+  align-items: center;
+  margin: 0 auto;
+  padding: 0;
+  padding-top: 20px;
   list-style: none;
 
   @media (min-width: @tablet-width) {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    width: 122px;
     margin-top: 63px;
     padding: 0;
     list-style: none;
@@ -17,17 +20,16 @@
 .social {
   width: 320px;
   height: 63px;
-  margin-top: -16px;
   background-color: @basic__grey;
 
   @media (min-width: @tablet-width) {
-    width: 256px;
+    width: 236px;
     height: 146px;
     margin: 0;
   }
 
   @media (min-width: @desktop-width) {
-    width: 480px;
+    width: 406px;
     height: 149px;
     margin: 0;
   }

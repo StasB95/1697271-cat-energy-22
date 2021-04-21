@@ -13,15 +13,40 @@
   border-bottom: 1px solid @basic__grey-2;
 
   @media (min-width: @tablet-width) {
-
     font-weight: 400;
     font-size: 18px;
     line-height: 24px;
+    border: none;
   }
 
   @media (min-width: @desktop-width) {
     color: @basic__white;
-    border: none;
+  }
+}
+
+.main-nav__item a {
+  color: @basic__black;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .main-nav__item a {
+    color: @basic__white;
+
+    &:hover {
+      opacity: 0.6;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
   }
 }
 
@@ -40,7 +65,7 @@
 
   @media (min-width: @desktop-width) {
     margin-top: 62px;
-    width: 720px;
+    width: 610px;
   }
 }
 
