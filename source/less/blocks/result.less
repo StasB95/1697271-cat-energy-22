@@ -6,28 +6,83 @@
 
 .result {
   padding: 0;
-  margin: 0;
+  margin: 0 auto;
   border: none;
   font-size: 16px;
   line-height: 18px;
   color: @special__dark-grey;
-  width: 320px;
-  height: 161px;
+  width: 280px;
+  height: 157px;
   border-bottom: 1px solid @special__grey;
 
   @media (min-width: @tablet-width) {
     font-size: 20px;
     line-height: 30px;
     color: @special__dark-grey;
-    width: 707px;
-    height: 161px;
+    width: 630px;
+    height: 196px;
+    border: 1px solid @special__grey;
   }
 
   @media (min-width: @desktop-width) {
+    margin: 0;
     font-size: 20px;
     line-height: 30px;
     color: @special__dark-grey;
-    width: 570px;
-    height: 161px;
+    width: 568px;
+    height: 200px;
   }
+}
+
+.result__item {
+  position: relative;
+  margin-top: 26px;
+}
+
+.result-input + label::before {
+  content: "";
+  position: absolute;
+  left: 5px;
+  top: -7px;
+  width: 30px;
+  height: 30px;
+  border: 2px solid @special__grey;
+  border-radius: 50%;
+
+  @media (min-width: @tablet-width) {
+    content: "";
+    position: absolute;
+    left: 23px;
+    top: -7px;
+    width: 40px;
+    height: 40px;
+    border: 2px solid @special__grey;
+    border-radius: 50%;
+  }
+}
+
+.result-input:checked + label::after {
+  content: "";
+  position: absolute;
+  top: 3px;
+  left: 16px;
+  width: 14px;
+  height: 14px;
+  background-color: @basic_green;
+  border-radius: 50%;
+
+  @media (min-width: @tablet-width) {
+    content: "";
+    position: absolute;
+    top: 6px;
+    left: 37px;
+    width: 18px;
+    height: 18px;
+    background-color: @basic_green;
+    border-radius: 50%;
+  }
+}
+
+.result__label {
+  margin-left: 88px;
 }

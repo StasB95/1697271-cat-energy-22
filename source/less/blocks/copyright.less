@@ -26,6 +26,10 @@
   line-height: 18px;
   color: @special__dark-grey;
 
+  &:active {
+    opacity: 0.3;
+  }
+
   @media (min-width: @tablet-width) {
     margin-left: 50px;
   }
@@ -33,4 +37,13 @@
   @media (min-width: @desktop-width) {
     margin-left: 200px;
   }
+}
+
+.copuright__icon:hover path {
+  fill: @basic_green;
+}
+
+.copuright__icon:active path {
+  fill: @basic_green;
+  opacity: 0.3;
 }

@@ -6,25 +6,24 @@
 
 .information {
   padding: 0;
-  margin: 0;
+  margin: 0 auto;
   border: none;
   font-size: 16px;
   line-height: 18px;
   color: @special__dark-grey;
-  width: 320px;
-  height: 161px;
+  width: 280px;
+  height: 200px;
   border-bottom: 1px solid @special__grey;
 
   @media (min-width: @tablet-width) {
     padding: 0;
-    margin: 0;
+    margin: 0 auto;
     border: none;
     font-size: 20px;
     line-height: 30px;
     color: @special__dark-grey;
-    width: 707px;
-    height: 161px;
-    border-bottom: 1px solid @special__grey;
+    width: 630px;
+    height: 260px;
   }
 
   @media (min-width: @desktop-width) {
@@ -34,8 +33,94 @@
     font-size: 20px;
     line-height: 30px;
     color: @special__dark-grey;
-    width: 570px;
-    height: 161px;
-    border-bottom: 1px solid @special__grey;
+    width: 568px;
+    height: 200px;
+  }
+}
+
+.information__item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 13px;
+  height: 46px;
+
+  @media (min-width: @tablet-width) {
+    margin-top: 25px;
+  }
+
+  @media (min-width: @desktop-width) {
+    &:nth-child(1) {
+      margin-top: 6px;
+    }
+  }
+}
+
+.information__input1 {
+  font-size: 16px;
+  line-height: 18px;
+  width: 225px;
+  height: 40px;
+  border: 1px solid @special__grey;
+
+  &:valid {
+    border: 1px solid @status_error;
+  }
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+    width: 567px;
+    height: 52px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 500px;
+  }
+}
+
+.information__input2 {
+  font-size: 16px;
+  line-height: 18px;
+  width: 200px;
+  height: 40px;
+  border: 1px solid @special__grey;
+
+  &:valid {
+    border: 1px solid @status_error;
+  }
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+    width: 536px;
+    height: 52px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 470px;
+  }
+}
+
+.information__input3 {
+  font-size: 16px;
+  line-height: 18px;
+  width: 167px;
+  height: 40px;
+  border: 1px solid @special__grey;
+
+  &:valid {
+    border: 1px solid @status_error;
+  }
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+    width: 497px;
+    height: 52px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 425px;
   }
 }

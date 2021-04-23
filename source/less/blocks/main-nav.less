@@ -16,11 +16,12 @@
     font-weight: 400;
     font-size: 18px;
     line-height: 24px;
+    width: auto;
     border: none;
   }
 
   @media (min-width: @desktop-width) {
-    color: @basic__white;
+    margin-left: 70px;
   }
 }
 
@@ -37,7 +38,7 @@
 }
 
 @media (min-width: @desktop-width) {
-  .main-nav__item a {
+  .main-nav__index a {
     color: @basic__white;
 
     &:hover {
@@ -60,7 +61,7 @@
     line-height: 24px;
     width: 572px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
   }
 
   @media (min-width: @desktop-width) {
@@ -72,7 +73,7 @@
 .main-nav__toggle {
   position: absolute;
   top: 23px;
-  right: 0;
+  right: 20px;
   width: 24px;
   height: 24px;
   background-color: @basic__white;
