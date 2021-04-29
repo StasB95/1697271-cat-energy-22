@@ -9,11 +9,13 @@
     <header class="page-header">
       <div class="page-header__wrapper  page-header__index">
         <div class="page-header__logo">
-          <a>
-            <img class="page-header__logo1" src="img/logo-mobile1.svg" width="33" height="34" alt="Логотип Кот">
-          </a>
-          <a>
-            <img class="page-header__logo2" src="img/logo-mobile2.svg" width="101" height="18" alt="Логотип CAT ENERGY">
+          <a href="#">
+            <picture>
+              <source media="(min-width: 1440px)" srcset="img/logo-desktop.svg">
+              <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+              <img class="page-header__logo1" src="img/logo-mobile1.svg" width="33" height="34" alt="Логотип Кот">
+              <img class="page-header__logo2" src="img/logo-mobile2.svg" width="101" height="18" alt="Логотип CAT ENERGY">
+            </picture>
           </a>
         </div>
         <nav class="main-nav main-nav--closed  main-nav--nojs">
@@ -44,7 +46,11 @@
             <p class="presentation_text">Занялся собой? Займись котом!</p>
             <a href="form.html" class="presentation_link">Подобрать программу</a>
           </div>
-          <img class="presentation_img" src="img/index-mobile1.png" width="280" height="270" alt="Пример продукции магазина">
+          <picture>
+            <source media="(min-width: 1440px)" srcset="img/index-desktop1.png 1x, img/index-desktop1@2x.png 2x">
+            <source media="(min-width: 768px)" srcset="img/index-tablet1.png 1x, img/index-tablet1@2x.png 2x">
+            <img class="presentation_img" src="img/index-mobile1.png" srcset="img/index-mobile1@2x.png 2x" width="280" height="270" alt="Пример продукции магазина">
+          </picture>
         </div>
       </section>
       <section class="desire">
@@ -122,8 +128,11 @@
             </div>
           </div>
           <div class="example__img slider">
-            <img class="slider__after" src="img/after-mobile.png" alt="Фото после курса">
-            <img class="slider__before" src="img/before-mobile.png" alt="Фото до курса">
+            <picture>
+              <source media="(min-width: 1440px)" srcset="img/image_cat_desktop.png 1x, img/image_cat_desktop@2x.png 2x">
+              <source media="(min-width: 768px)" srcset="img/image_cat_tablet.png 1x, img/image_cat_tablet@2x.png 2x">
+              <img class="slider__before" src="img/before-mobile.png" srcset="img/before-mobile@2x.png 2x" alt="Фото до курса">
+            </picture>
             <div class="slider__bar">
               <span>БЫЛО</span>
               <span class="slider__toggle"></span>
