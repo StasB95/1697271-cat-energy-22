@@ -1,11 +1,51 @@
+.card {
+  position: relative;
+  width: 280px;
+  height: 208px;
+  border-bottom: 1px solid @special__grey;
+
+  @media (min-width: @tablet-width) {
+    width: 324px;
+    height: 431px;
+    margin-top: 80px;
+    border: none;
+    background-color: @basic__grey;
+
+    &:nth-child(2n) {
+      margin-left: 60px;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 245px;
+    margin-left: 80px;
+
+    &:nth-child(2n) {
+      margin-left: 80px;
+    }
+
+    &:nth-child(1) {
+      margin-left: 0;
+    }
+
+    &:nth-child(5) {
+      margin-left: 0;
+    }
+  }
+}
+
 .card__title {
   font-size: 16px;
   line-height: 20px;
+  width: 100px;
   color: @special__dark-grey-2;
 
   @media (min-width: @tablet-width) {
     font-size: 20px;
     line-height: 24px;
+    text-align: center;
+    margin: 0 auto;
+    width: 130px;
     color: @special__dark-grey-2;
   }
 
@@ -17,17 +57,23 @@
 }
 
 .card__table {
+  width: 140px;
+  margin: 0 auto;
   font-family: "Arial", "Helvetica", sans-serif;
   font-size: 12px;
   line-height: 16px;
 
   @media (min-width: @tablet-width) {
+    width: 250px;
+    height: 89px;
+    margin-top: 20px;
     font-family: "Arial", "Helvetica", sans-serif;
     font-size: 16px;
     line-height: 16px;
   }
 
   @media (min-width: @desktop-width) {
+    width: 168px;
     font-family: "Arial", "Helvetica", sans-serif;
     font-size: 16px;
     line-height: 16px;
@@ -43,11 +89,20 @@
   background-color: @basic_green;
   border: none;
 
+  &:hover {
+    background-color: @basic_green-2;
+  }
+
+  &:active {
+    color: @special__white;
+  }
+
   @media (min-width: @tablet-width) {
     font-size: 16px;
     line-height: 20px;
     width: 248px;
     height: 40px;
+    margin-left: 38px;
     color: @basic__white;
     background-color: @basic_green;
     border: none;
@@ -64,18 +119,47 @@
   }
 }
 
-@media (min-width: @tablet-width) {
-  .card {
-    width: 324px;
-    height: 511px;
-    margin-left: 20px;
+@media (max-width: @mobile-width-only) {
+  .card__mobile {
+    display: flex;
+    height: 144px;
   }
 }
 
-@media (min-width: @desktop-width) {
-  .card {
-    width: 245px;
-    height: 511px;
-    margin-left: 20px;
+.card__img {
+  padding-top: 30px;
+  width: 140px;
+  text-align: center;
+
+  @media (min-width: @tablet-width) {
+    position: absolute;
+    left: 78px;
+    top: -80px;
+    width: 168px;
+    height: 200px;
+  }
+
+  @media (min-width: @desktop-width) {
+    left: 38px;
+  }
+}
+
+.card__cell2 {
+  text-align: right;
+}
+
+.card__cell {
+  @media (min-width: @tablet-width) {
+    border-bottom: 1px solid @special__grey;
+  }
+}
+
+.card__text {
+  @media (min-width: @tablet-width) {
+    width: 250px;
+    height: 157px;
+    margin: 0 auto;
+    margin-top: 160px;
+    margin-bottom: 34px;
   }
 }
