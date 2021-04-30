@@ -71,14 +71,13 @@
   border-bottom: 1px solid @special__grey;
 
   @media (min-width: @tablet-width) {
-    height: 139px;
+    height: 138px;
     display: flex;
     flex-wrap: wrap;
-    margin-bottom: 20px;
   }
 
   @media (min-width: @desktop-width) {
-    height: 72px;
+    height: 71px;
     display: flex;
     align-items: center;
     margin: 0;
@@ -221,8 +220,14 @@
   }
 }
 
-@media (min-width: @desktop-width) {
-  .additional__desktop {
+.additional__desktop {
+  @media (min-width: @tablet-width) {
+    width: 708px;
+    height: 556px;
+    border: 1px solid @special__grey;
+  }
+
+  @media (min-width: @desktop-width) {
     width: 896px;
     height: 288px;
     border-top: 1px solid @special__grey;
@@ -231,12 +236,10 @@
 
 .additional__block {
   @media (min-width: @tablet-width) {
-    border: 1px solid @special__grey;
     margin-top: -31px;
   }
 
   @media (min-width: @desktop-width) {
-    border: none;
     display: flex;
     margin: 0;
   }

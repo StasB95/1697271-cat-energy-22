@@ -7,7 +7,7 @@
   @media (min-width: @tablet-width) {
     width: 324px;
     height: 431px;
-    margin-top: 80px;
+    margin-top: 120px;
     border: none;
     background-color: @basic__grey;
 
@@ -126,7 +126,7 @@
   }
 }
 
-.card__img {
+.card__picture1 {
   padding-top: 30px;
   width: 140px;
   text-align: center;
@@ -135,6 +135,24 @@
     position: absolute;
     left: 78px;
     top: -80px;
+    width: 161px;
+    height: 172px;
+  }
+
+  @media (min-width: @desktop-width) {
+    left: 38px;
+  }
+}
+
+.card__picture2 {
+  padding-top: 30px;
+  width: 140px;
+  text-align: center;
+
+  @media (min-width: @tablet-width) {
+    position: absolute;
+    left: 78px;
+    top: -100px;
     width: 168px;
     height: 200px;
   }
@@ -142,6 +160,10 @@
   @media (min-width: @desktop-width) {
     left: 38px;
   }
+}
+
+.card__img {
+  width: auto;
 }
 
 .card__cell2 {
