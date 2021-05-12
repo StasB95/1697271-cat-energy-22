@@ -2,8 +2,10 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
-    <link type="text/css" rel="stylesheet" href="css/style.css">
+    <link type="text/css" rel="stylesheet" href="css/style.min.css">
     <title>HTML Academy: Кэт энерджи</title>
+    <link rel="icon" href="favicon.ico">
+    <link rel="icon" href="img/favicon.ico">
   </head>
   <body class="page__body">
     <header class="page-header">
@@ -47,6 +49,10 @@
             <a href="form.html" class="presentation_link">Подобрать программу</a>
           </div>
           <picture>
+            <source type="image/webp" media="(min-width: 1440px)" srcset="img/index-desktop1.webp 1x, img/index-desktop1@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 768px)" srcset="img/index-tablet1.webp 1x, img/index-tablet1@2x.webp 2x">
+            <source type="image/webp" srcset="img/index-mobile1.webp 1x, img/index-mobile1@2x.webp 2x">
+
             <source media="(min-width: 1440px)" srcset="img/index-desktop1.png 1x, img/index-desktop1@2x.png 2x">
             <source media="(min-width: 768px)" srcset="img/index-tablet1.png 1x, img/index-tablet1@2x.png 2x">
             <img class="presentation_img" src="img/index-mobile1.png" srcset="img/index-mobile1@2x.png 2x" width="280" height="270" alt="Пример продукции магазина">
@@ -129,6 +135,10 @@
           </div>
           <div class="example__img slider">
             <picture>
+              <source type="image/webp" media="(min-width: 1440px)" srcset="img/image_cat_desktop.webp 1x, img/image_cat_desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/image_cat_tablet.webp 1x, img/image_cat_tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/before-mobile.webp 1x, img/before-mobile@2x.webp 2x">
+
               <source media="(min-width: 1440px)" srcset="img/image_cat_desktop.png 1x, img/image_cat_desktop@2x.png 2x">
               <source media="(min-width: 768px)" srcset="img/image_cat_tablet.png 1x, img/image_cat_tablet@2x.png 2x">
               <img class="slider__before" src="img/before-mobile.png" srcset="img/before-mobile@2x.png 2x" alt="Фото до курса">
@@ -198,6 +208,6 @@
         </div>
       </div>
     </footer>
-    <script src="js/script.js"></script>
+    <script src="js/script.min.js"></script>
   </body>
 </html>
